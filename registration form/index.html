@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registratin Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action="/action" method="post">
+        <fieldset>
+           <label for="first-name">Enter Your First Name:</label>
+           <input type="text" id="first-name" name="fn" required>
+           <label for="last-name">Enter Your Last Name:</label>
+           <input type="text" id="last-name" name="ln" required>
+           <label for="email">Enter Your Email:</label>
+           <input type="email" name="email" id="email" required>
+           <label for="new-password">Create a New Password:</label>
+           <input type="password" name="password" id="new-password" required>
+        </fieldset>
+        <fieldset>
+            <legend>Account type (required)</legend>
+            <label for="personal"><input type="radio" name="account-type" id="personal" class="inline" checked>
+            Personal
+            </label>
+            <label for="business"><input type="radio" name="account-type" id="business" class="inline">
+            Business
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture">Upload a profile Picture:</label>
+            <input type="file" name="file" id="profile-picture" required>
+            <label for="age">Input your age (years): </label>
+            <input type="number" name="age" id="age" required>
+            <label for="referrer">How did you hear about us?</label>
+            <select name="referrer" id="referrer" required>
+                <option value="">(select one)</option>
+                <option value="1">freeCodeCamp News</option>
+                <option value="2">freeCodeCamp YouTube Channel</option>
+                <option value="3">freeCodeCamp Forum</option>
+                <option value="4">Other</option>
+            </select>
+            <label for="bio">Provide a Bio:</label>
+            <textarea name="bio" id="bio" cols="30" rows="3" placeholder="I like coding on the beach..."></textarea>
+        </fieldset>
+        <label for="terms-and-condition"><input type="checkbox" class="inline" name="tos" id="terms-and-condition" required>
+        I accept the <a href="https://www.freecodecamp.org/news/" target="_blank">terms and conditions</a>
+        </label>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</body>
+</html>
