@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1 id="title">Placement Survey Form</h1> 
+   <p id="description">Thank you for taking time to help everyone to crack their placement through your suggestion</p>
+   <form action="/action" method="post" id="survey-form">
+    <label for="name" id="name-label">Name<input type="text" id="name" placeholder="Enter your name" required></label>
+    <label for="email" id="email-label">Email<input type="email" id="email" placeholder="Enter your Email" required></label>
+    <label for="number" id="number-label">Age<input type="number" id="number" placeholder="Age" min="18" max="80" required></label>
+    <label for="dropdown">Which language would you prefer for placement?
+        <select name="lang" id="dropdown">
+            <option value="">select an option</option>
+            <option value="1">c</option>
+            <option value="2">c++</option>
+            <option value="3">java</option>
+            <option value="4">python</option>
+            <option value="5">javascript</option>
+        </select>
+    </label>
+    <fieldset>
+        <legend>What would you recommend for to get a Placement?</legend>
+        <label for="development"><input type="radio" name="placement" id="development" checked>Development</label>
+        <label for="dsa"><input type="radio" name="placement" id="dsa">DSA</label>
+        <label for="both"><input type="radio" name="placement" id="both">Both Dsa&Development</label>
+    </fieldset>
+    <fieldset>
+        <legend>Which domain based projects is best for placement?</legend>
+        <label for="web-development"><input type="checkbox" name="webdev" id="web-development" value="webapps" checked>Web Development</label>
+        <label for="app-development"><input type="checkbox" name="appdev" id="app-development" value="apps">App-Development</label>
+        <label for="ai"><input type="checkbox" name="ai" id="ai" value="ai">Artificial Intelligence</label>
+        <label for="ml"><input type="checkbox" name="machine-learn" id="ml" value="ml">Machine-Learning</label>
+        <label for="fullstack"><input type="checkbox" name="fs" id="fullstack" value="full-s">Full-Stack Projects</label>
+    </fieldset>
+    <label for="comments">Any comments or suggestion?</label>
+    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+    <button type="submit" id="submit">Submit</button>    
+   </form>
+</body>
+</html>
