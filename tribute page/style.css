@@ -99,3 +99,8 @@ footer p{
 footer p span {
     color: #ff0000;
 }
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
