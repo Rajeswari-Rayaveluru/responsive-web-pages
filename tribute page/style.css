@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+#main_container {
+    background-color: #eee;
+    padding: 15px;
+    margin: 30px 8px ;
+    border-radius: 5px;
+}
+#title {
+    font-size: 3rem;
+}
+#desc {
+    font-size: 2rem;
+}
+.divider {
+    border-bottom: 1px solid #beb5b5;
+    width: 70%;
+    margin: 20px auto 15px;
+}
+#img-div {
+    background: #fff;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 80%;
+}
+#image {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    height: auto;
+   background-position: center;
+   border-radius: 3px;
+   display: block;
+   margin: 0 auto;
+}
+#img-caption {
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #252826;
+    font-style: italic;
+}
+#introduction h2 {
+    font-size: 2rem;
+}
+#introduction p, #tribute-info p{
+    font-size: 1rem;
+    text-align: justify;
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 2;
+}
+#tribute-info h2 {
+    font-size: 2rem;
+}
+#tribute-info ul li, .link {
+    font-size: 1rem;
+    text-align: justify;
+    max-width: 60%;
+    margin: 0 auto;
+    line-height: 2;
+}
+.link {
+   margin-top: 10px;
+}
+#tribute-link {
+    color: #6495ed;
+    cursor: pointer;
+    text-decoration: none;
+}
+#tribute-link:hover {
+    color: #7769cf;
+}
+#more-info {
+    background-color: #e2dede;
+    max-width: 80%;
+    margin: 20px auto 0;
+}
+#famous_quote {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 5vh;
+}
+#read_more {
+    text-align: center;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+}
+footer p{
+    font-size: 1.1rem;
+    margin-top: 5vh;
+}
+footer p span {
+    color: #ff0000;
+}
